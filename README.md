@@ -25,3 +25,4 @@ Add an upstream remote to keep up to date with the original.
     git checkout master
     git merge upstream/master
 
+This part is my pull request.
