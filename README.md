@@ -19,6 +19,9 @@ Add an upstream remote to keep up to date with the original.
     git remote add upstream https://github.com/...
     git remote -v
 
+## Updating the local repo from original
 
-
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
 
