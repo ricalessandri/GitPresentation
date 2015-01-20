@@ -17,6 +17,8 @@ Add an upstream remote to keep up to date with the original.
 
     git remote -v 
     git remote add upstream https://github.com/...
+    git remote -v
+
 
 
 
