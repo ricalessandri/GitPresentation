@@ -25,3 +25,7 @@ Add an upstream remote to keep up to date with the original.
     git checkout master
     git merge upstream/master
 
+
+## Making a pull request
+
+Make your changes to your local repo, commit them, push changes to your own fork on GitHub. Then go to github.com and create a pull request. 
