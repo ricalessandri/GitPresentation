@@ -51,13 +51,16 @@ Basically git works in these steps:
 -   Commit those changes
 -   (push your local repo to GitHub or make a pull request)
 
+This would look something like this in git.
+
     touch newfile.txt
     git add newfile.txt
     git commit -m 'Added a new file newfile.txt.'
     git push 
 
 
-Helpful commands:
+Some commands that help out when in doubt.
+
     git help
     git help add
     git add --help
