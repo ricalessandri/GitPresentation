@@ -196,6 +196,24 @@ You can also revert all your changes and return to the file you had in your repo
     git branch -d demo 
 
 
+    echo This line is from the original commit. > newfile.txt
+    git add * 
+    git commit -m 'Added the newfile for merge conflict demo.'
+    git branch conflict
+    git checkout conflict
+    echo This line is from the 'conflict' branch >> newfile.txt
+    git add * 
+    git commit -m 'Commit in the conflict branch to newfile.txt.'
+    git checkout master
+    echo This line is from the 'master' branch >> newfile.txt
+    git add *
+    git commit -m 'Commit in the master branch to newfile.txt.'
+    git merge conflict 
+    vim newfile.txt
+    git commit -m 'Merged commit.'
+    git log --pretty=oneline
+
+
 ## Making a pull request
 
 Let's first clean up and then only leave the yourname.txt file for the pull request.
@@ -205,3 +223,9 @@ Let's first clean up and then only leave the yourname.txt file for the pull requ
     git push
 
 Make your changes to your local repo, commit them, push changes to your own fork on GitHub. Then go to github.com and create a pull request. 
+
+#  Where to find more information?
+
+-   Git Book <http://git-scm.com/book>
+-   GitHub help <http://help.github.com>
+-   Markdown syntax <http://daringfireball.net/projects/markdown>
