@@ -20,6 +20,7 @@ Several ways to install, easiest is to go to [git-scm.com/downloads](git-scm.com
 Setting up your identity:
     git config --global user.name 'Your Name'
     git config --global user.email your.email@whatever.com
+    git config --global core.editor vim
 
 You can skip the global part if you want to set different name/email for different repos on your computer. 
 
@@ -91,12 +92,21 @@ If you want git to ignore some files you just add a .gitignore file to your repo
 
 Add and commit the .gitignore file and git starts to ignore those files that make your log messy. 
 
-## See unstaged changes
+## See changes in unstaged and staged files 
 
     vim yourname.txt
     (add some text, save and close)
     git status
     git diff 
+    git add yourname.txt
+    git diff
+    git diff --staged
+    git commit -m 'Modified yourname.txt file.'
+
+## Make a quick commit 
+
+    touch newfile.txt
+    git commit -a -m 'Just added a newfile.txt.'
 
 ## Making a pull request
 
