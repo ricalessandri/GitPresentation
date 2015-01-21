@@ -72,7 +72,7 @@ Let's go over the three stages of files again. First is modified data. That's da
 
 Fork the repo in GitHub, then clone the forked repo on your local machine. 
 
-    git clone https://github.com/MDJaakko/GitPresentation.git
+    git clone https://github.com/YourUserName/GitPresentation.git
 
 Add an upstream remote to keep up to date with the original.
 
@@ -82,13 +82,17 @@ Add an upstream remote to keep up to date with the original.
 
 ## Updating the local repo from original
 
-    git fetch upstream
-    git checkout master
-    git merge upstream/master
+Next, we will fetch the changes I made to the repo. The first command fetches the changes and the second merges them to your own master branch. 
 
-This part is my pull request.
+    git fetch upstream
+    git merge upstream/master
+    git push
+
+Now you should see the file I created in your folder.
 
 ## Making changes to your local repo
+
+We will play around with git more now. First we check that there are no uncommited changes yet and then we'll create a new file, stage and commit that and push it to our own GitHub repo. In the end we will hopefully also have time to submit a pull request so that everyones 'yourname.txt' will be included in my repo where you forked your own.
 
     git status
     touch yourname.txt
@@ -109,8 +113,9 @@ Add and commit the .gitignore file and git starts to ignore those files that mak
 
 ## See changes in unstaged and staged files 
 
-    vim yourname.txt
-    (add some text, save and close)
+Sometimes it's good to see what you've changed before you commit your changes.
+
+    vim yourname.txt (add some text, save and close)
     git status
     git diff 
     git add yourname.txt
