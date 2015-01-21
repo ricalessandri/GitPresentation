@@ -1,6 +1,3 @@
-# GitPresentation
-Presentation material for MD lab git tutorial
-
 # What is git?
 
 Git is a version control system, basically it stores different versions of whatever you're working on. This is helpful if you need to track back your own changes and especially if you're working on something together with other people. 

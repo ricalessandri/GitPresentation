@@ -1,3 +1,0 @@
-This line is from the original commit.
-This line is from master branch
-This line is from the conflict branch
