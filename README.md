@@ -146,16 +146,21 @@ Sometimes it's good to see what you've changed before you commit your changes.
 ## Viewing the commit history
 
 You can see the whole commit history of any repo you have created/cloned (offline).
+
     git log
+
 This command list all the commits of the repo in reverse order.
 
 You can also see the diffs for each commit which makes it easier to, e.g. find when a particular change was made (ideally the commit message would then tell why that change was made...).
+
     git log -p 
 
 You can also limit how many last commits are listed.
+
     git log -p -2
 
 Other commands to try:
+
     git log --stat
     git log --pretty=oneline
 
