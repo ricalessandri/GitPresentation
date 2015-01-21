@@ -191,6 +191,11 @@ You can also revert all your changes and return to the file you had in your repo
     git status
 
 ## Making a new branch 
+
+When you work longer on some code branches come useful. For example, the master branch stays functioning while you develop the new features in other branches. 
+
+First, we create a new demo branch and checkout that one (meaning we are ready to modify it).
+
     git branch
     git branch demo
     git branch
@@ -202,9 +207,15 @@ You can also revert all your changes and return to the file you had in your repo
     git commit -m 'Commit in the demo branch.'
     git status
     ll
+
+Now, let's go back to the master branch. We see that the modifications of demo branch are not visible here.
+
     git checkout master
     git branch
     ll
+
+Then, we'll make a new file in the master branch, check that it indeed isn't in the demo branch and then merge the demo branch to master branch. 
+
     touch masterfile
     git add masterfile
     git commit -m 'Commit in the master branch.'
@@ -218,6 +229,7 @@ You can also revert all your changes and return to the file you had in your repo
     git log --pretty=oneline
     git branch -d demo 
 
+This is not as easy always, just an example of a conflicting merge with branches. 
 
     echo This line is from the original commit. > newfile.txt
     git add * 
@@ -243,6 +255,8 @@ Let's first clean up and then only leave the yourname.txt file for the pull requ
     rm needed.txt
     git rm needed.txt
     git commit -m 'Cleanup done.'
+    git fetch upstream
+    git merge upstream/master
     git push
 
 Make your changes to your local repo, commit them, push changes to your own fork on GitHub. Then go to github.com and create a pull request. 
