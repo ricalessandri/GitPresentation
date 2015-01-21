@@ -19,7 +19,7 @@ Git has a lot of features and is used for all kinds of projects from small to ve
 
 ## Git installation
 
-Several ways to install, easiest is to go to [git-scm.com/downloads](git-scm.com/downloads). However, if you haven't tried homebrew [brew.sh](brew.sh) on OS X yet you should! 
+Several ways to install, easiest is to go to <http://git-scm.com/downloads>. However, if you haven't tried homebrew <http://brew.sh> on OS X yet you should! 
 
 First thing after installing should be setting up your identity so your commits show the correct information. 
 
@@ -41,7 +41,7 @@ Check your setup:
 
 # GitHub account
 
-Go to [github.com](github.com) and sign up for a free GitHub account. 
+Go to <http://github.com> and sign up for a free GitHub account. 
 
 # Git basic commands
 
