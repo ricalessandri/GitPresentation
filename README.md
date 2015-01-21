@@ -72,12 +72,12 @@ Let's go over the three stages of files again. First is modified data. That's da
 
 Fork the repo in GitHub, then clone the forked repo on your local machine. 
 
-    git clone https://github.com/...
+    git clone https://github.com/MDJaakko/GitPresentation.git
 
 Add an upstream remote to keep up to date with the original.
 
     git remote -v 
-    git remote add upstream https://github.com/...
+    git remote add upstream https://github.com/MDJaakko/GitPresentation.git
     git remote -v
 
 ## Updating the local repo from original
