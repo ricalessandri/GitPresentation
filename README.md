@@ -1,4 +1,7 @@
-# What is git?
+# Git and GitHub Tutorial
+## MD Lab, Wednesday 21 Jan 2015
+
+##What is git?
 
 Git is a version control system, basically it stores different versions of whatever you're working on. This is helpful if you need to track back your own changes and especially if you're working on something together with other people. 
 
@@ -8,13 +11,13 @@ With git you have the whole version control system on your local machine. For ex
 
 Git has a lot of features and is used for all kinds of projects from small to very large ones (after all it was created for maintaining linux kernel). There's plenty of more to explore beyond this tutorial and I'll also intentionally skip some details that get more hairy with more complicated projects. 
 
-# What you'll need
+## What you'll need
 
 -   A laptop
 -   Git installed
 -   GitHub account
 
-# Git installation
+## Git installation
 
 Several ways to install, easiest is to go to [git-scm.com/downloads](git-scm.com/downloads). However, if you haven't tried homebrew [brew.sh](brew.sh) on OS X yet you should! 
 
