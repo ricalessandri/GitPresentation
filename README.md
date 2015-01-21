@@ -122,11 +122,17 @@ Sometimes it's good to see what you've changed before you commit your changes.
     git diff
     git diff --staged
     git commit -m 'Modified yourname.txt file.'
+    git push
 
 ## Make a quick commit 
 
     touch newfile.txt
     git commit -a -m 'Just added a newfile.txt.'
+    git add * 
+    git commit -a -m 'Just added a newfile.txt.'
+    vim newfile.txt (add some text)
+    git commit -a -m 'Just a small text addition.'
+    git push
 
 ## Removing files
 
