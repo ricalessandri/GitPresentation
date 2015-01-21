@@ -143,11 +143,29 @@ Other commands to try:
 
 
 ## How to undo things
+
+If you make a commit before actually having all there you can amend the previous commit later (and make them as a single commit).
+
     touch file.txt
     git commit -a -m 'Quick commit that we will undo.'
     vim file.txt (add text)
-    git commit -amend -m 'Redo the commit with text in file.'
+    git commit --amend -m 'Redo the commit with text in file.'
     git log --pretty=oneline
+
+It's also possbile to unstage files.
+
+    touch not_needed.txt
+    touch needed.txt
+    git add *
+    git status
+    git reset HEAD not_needed.txt
+
+You can also revert all your changes and return to the file you had in your repo previously.
+    rm needed.txt
+    ls
+    git checkout -- needed.txt
+    ls
+    git status
 
 
 ## Making a pull request
