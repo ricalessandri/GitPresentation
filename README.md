@@ -22,12 +22,13 @@ Setting up your identity:
     git config --global user.email your.email@whatever.com
     git config --global core.editor vim
 
+You can skip the global part if you want to set different name/email for different repos on your computer. 
+
 Let's also save some time on not having to write passwords. 
     git config credential.helper 'cache --timeout=3600'
 
 It's also possible to connect to GitHub using ssh and ssh keys but that's a topic for another tutorial... 
 
-You can skip the global part if you want to set different name/email for different repos on your computer. 
 
 Check your setup:
     git config --list
