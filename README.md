@@ -168,6 +168,32 @@ You can also revert all your changes and return to the file you had in your repo
     git status
 
 ## Making a new branch 
+    git branch
+    git branch demo
+    git branch
+    git checkout demo
+    git branch
+    ll
+    touch demofile
+    git add demofile
+    git commit -m 'Commit in the demo branch.'
+    git status
+    ll
+    git checkout master
+    git branch
+    ll
+    touch masterfile
+    git add masterfile
+    git commit -m 'Commit in the master branch.'
+    git status
+    git checkout demo 
+    ll
+    git checkout master
+    ll
+    git merge demo
+    git branch
+    git log --pretty=oneline
+    git branch -d demo 
 
 
 ## Making a pull request
