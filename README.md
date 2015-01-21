@@ -21,6 +21,12 @@ Git has a lot of features and is used for all kinds of projects from small to ve
 
 Several ways to install, easiest is to go to [git-scm.com/downloads](git-scm.com/downloads). However, if you haven't tried homebrew [brew.sh](brew.sh) on OS X yet you should! 
 
+Add an upstream remote to keep up to date with the original.
+
+    git remote -v 
+    git remote add upstream https://github.com/...
+    git remote -v
+
 First thing after installing should be setting up your identity so your commits show the correct information. 
     git config --global user.name 'Your Name'
     git config --global user.email your.email@whatever.com
