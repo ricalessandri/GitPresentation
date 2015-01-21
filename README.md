@@ -17,6 +17,15 @@ With git you have the whole version control system on your local machine. For ex
 
 Several ways to install, easiest is to go to [git-scm.com/downloads](git-scm.com/downloads). However, if you haven't tried homebrew [brew.sh](brew.sh) on OS X yet you should! 
 
+Setting up your identity:
+    git config --global user.name 'Your Name'
+    git config --global user.email your.email@whatever.com
+
+You can skip the global part if you want to set different name/email for different repos on your computer. 
+
+Check your setup:
+    git config --list
+
 # GitHub account
 
 Go to [github.com](github.com) and sign up for a free GitHub account. 
@@ -33,6 +42,15 @@ Basically git works in these steps:
     git add newfile.txt
     git commit -m 'Added a new file newfile.txt.'
     git push 
+
+
+Helpful commands:
+    git help
+    git help add
+    git add --help
+
+
+Let's go over the three stages of files again. First is modified data. That's data that you've modified starting from your previous version of your repo. This data is not 'safe', you'll loose it if you switch to a different branch or checkout your old version. Second is staged data. This is data that you have modified and have staged to add to the git repo the next time you commit. It's still not safe but just a commit away from being commited data. Which is the third kind of data. That's data that's already commited to the git repository and is basically 'safe' (meaning you can always return to that point even if you delete the files later). 
 
 ## Forking a repo
 
@@ -53,6 +71,32 @@ Add an upstream remote to keep up to date with the original.
     git merge upstream/master
 
 This part is my pull request.
+
+## Making changes to your local repo
+
+    git status
+    touch yourname.txt
+    git status
+    git add yourname.txt
+    git status
+    git commit -m 'Added yourname.txt file.'
+    git status
+    git push
+
+## A sidenote about .gitignore
+
+If you want git to ignore some files you just add a .gitignore file to your repo. You list the files you want excluded, e.g.:
+    *.swp
+    *.jpg
+
+Add and commit the .gitignore file and git starts to ignore those files that make your log messy. 
+
+## See unstaged changes
+
+    vim yourname.txt
+    (add some text, save and close)
+    git status
+    git diff 
 
 ## Making a pull request
 
