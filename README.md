@@ -9,6 +9,8 @@ With git you have the whole version control system on your local machine. For ex
 Git has a lot of features and is used for all kinds of projects from small to very large ones (after all it was created for maintaining linux kernel). There's plenty of more to explore beyond this tutorial and I'll also intentionally skip some details that get more hairy with more complicated projects. 
 
 # What you'll need
+
+-   A laptop
 -   Git installed
 -   GitHub account
 
@@ -16,14 +18,14 @@ Git has a lot of features and is used for all kinds of projects from small to ve
 
 Several ways to install, easiest is to go to [git-scm.com/downloads](git-scm.com/downloads). However, if you haven't tried homebrew [brew.sh](brew.sh) on OS X yet you should! 
 
-Setting up your identity:
+First thing after installing should be setting up your identity so your commits show the correct information. 
     git config --global user.name 'Your Name'
     git config --global user.email your.email@whatever.com
     git config --global core.editor vim
 
 You can skip the global part if you want to set different name/email for different repos on your computer. 
 
-Let's also save some time on not having to write passwords. 
+Let's also save some time on not having to write passwords. (This will cache the password for an hour.)
     git config credential.helper 'cache --timeout=3600'
 
 It's also possible to connect to GitHub using ssh and ssh keys but that's a topic for another tutorial... 
