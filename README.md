@@ -108,6 +108,27 @@ Add and commit the .gitignore file and git starts to ignore those files that mak
     touch newfile.txt
     git commit -a -m 'Just added a newfile.txt.'
 
+## Removing files
+
+    rm newfile.txt
+    git status
+    git rm newfile.txt
+    git status
+    git commit -m 'Removed the newfile.txt.'
+    git push
+
+## Viewing the commit history
+
+You can see the whole commit history of any repo you have created/cloned (offline).
+    git log
+This command list all the commits of the repo in reverse order.
+
+You can also see the diffs for each commit which makes it easier to, e.g. find when a particular change was made (ideally the commit message would then tell why that change was made...).
+    git log -p 
+
+You can also limit how many last commits are listed.
+    git log -p -2
+
 ## Making a pull request
 
 Make your changes to your local repo, commit them, push changes to your own fork on GitHub. Then go to github.com and create a pull request. 
