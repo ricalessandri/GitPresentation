@@ -5,7 +5,7 @@ Presentation material for MD lab git tutorial
 
 Git is a version control system, basically it stores different versions of whatever you're working on. This is helpful if you need to track back your own changes and especially if you're working on something together with other people. 
 
-Unlike most version control systems git does not store changes between versions but snapshots (so saves all changed files again but does not waste space on unchanged files). 
+Unlike most version control systems git does not store changes between versions but snapshots (so saves all changed files again but does not waste space on unchanged files). Also unlike most version control systems there's no need for a central server when using git. (Things like GitHub make life sometimes easier but GitHub is still not a server for git, just a storage location.)
 
 With git you have the whole version control system on your local machine. For example, when you clone someone elses repo(sitory) you'll also copy the whole history of the project. This takes some space but speeds up all other actions with git. 
 
@@ -167,7 +167,15 @@ You can also revert all your changes and return to the file you had in your repo
     ls
     git status
 
+## Making a new branch 
+
 
 ## Making a pull request
+
+Let's first clean up and then only leave the yourname.txt file for the pull request.
+    rm needed.txt
+    git rm needed.txt
+    git commit -m 'Cleanup done.'
+    git push
 
 Make your changes to your local repo, commit them, push changes to your own fork on GitHub. Then go to github.com and create a pull request. 
