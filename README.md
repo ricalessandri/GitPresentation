@@ -9,6 +9,8 @@ Unlike most version control systems git does not store changes between versions 
 
 With git you have the whole version control system on your local machine. For example, when you clone someone elses repo(sitory) you'll also copy the whole history of the project. This takes some space but speeds up all other actions with git. 
 
+Git has a lot of features and is used for all kinds of projects from small to very large ones (after all it was created for maintaining linux kernel). There's plenty of more to explore beyond this tutorial and I'll also intentionally skip some details that get more hairy with more complicated projects. 
+
 # What you'll need
 -   Git installed
 -   GitHub account
@@ -134,6 +136,19 @@ You can also see the diffs for each commit which makes it easier to, e.g. find w
 
 You can also limit how many last commits are listed.
     git log -p -2
+
+Other commands to try:
+    git log --stat
+    git log --pretty=oneline
+
+
+## How to undo things
+    touch file.txt
+    git commit -a -m 'Quick commit that we will undo.'
+    vim file.txt (add text)
+    git commit -amend -m 'Redo the commit with text in file.'
+    git log --pretty=oneline
+
 
 ## Making a pull request
 
